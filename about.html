@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - TechWiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .banner {
+            background-color: #007BFF;
+            padding: 20px;
+            text-align: center;
+        }
+        .banner img {
+            display: block;
+            margin: 0 auto;
+            width: 75px;
+            height: 75px;
+        }
+        .header {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        .header a {
+            text-decoration: none;
+            color: #fff;
+            margin: 10px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .last-modified {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header class="banner">
+        <img src="https://i.groupme.com/800x600.png.b3b497e755b74afcb3da49e321933b01.large" alt="TechWiz Logo">
+        <h1>About Us</h1>
+    </header>
+    <div class="header">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products/Services</a>
+        <a href="team.html">Team</a>
+        <a href="testimonials.html">Testimonials</a>
+    </div>
+    <div class="content">
+        <h2>Our Story</h2>
+        <p>TechWiz was founded in the vibrant city of Springfield with a vision to revolutionize the tech industry. Unlike other companies, we believe in making technology accessible to everyone. Our journey began in 2011, and since then, we have been committed to providing innovative solutions that enhance the lives of our customers.</p>
+
+        <h2>Our Mission</h2>
+        <p>At TechWiz, our mission is to create cutting-edge mobile devices and services that cater to the unique needs of our diverse customer base. We strive to combine style, functionality, and affordability to ensure that technology empowers and connects people rather than dividing them. We're passionate about sustainability and are dedicated to reducing our environmental footprint through responsible manufacturing and recycling programs.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feedback, or inquiries, please don't hesitate to <a href="contact.html">contact us</a>. We look forward to hearing from you!</p>
+    </div>
+    <div class="last-modified" id="lastModified">
+        Last Modified: [Last Modified Date]
+    </div>
+
+    <script>
+        // JavaScript to dynamically update the "Last Modified" tag
+        function updateLastModified() {
+            const lastModifiedElement = document.getElementById('lastModified');
+            const lastModifiedDate = new Date(document.lastModified);
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            lastModifiedElement.textContent = 'Last Modified: ' + lastModifiedDate.toLocaleDateString('en-US', options);
+        }
+
+        // Call the function to update the "Last Modified" tag
+        updateLastModified();
+    </script>
+</body>
+</html>

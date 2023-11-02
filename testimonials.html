@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - TechWiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .banner {
+            background-color: #007BFF;
+            padding: 20px;
+            text-align: center;
+        }
+        .banner img {
+            display: block;
+            margin: 0 auto;
+            width: 75px;
+            height: 75px;
+        }
+        .header {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        .header a {
+            text-decoration: none;
+            color: #fff;
+            margin: 10px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .last-modified {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 12px;
+        }
+
+        .client-name {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .cta-button {
+            display: block;
+            margin: 30px auto;
+            padding: 15px 30px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 700;
+            transition: background-color 0.2s;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Code Provided -->
+    <header class="banner">
+        <img src="https://i.groupme.com/800x600.png.b3b497e755b74afcb3da49e321933b01.large" alt="TechWiz Logo">
+        <h1>Testimonials</h1>
+    </header>
+    <div class="header">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products/Services</a>
+        <a href="team.html">Team</a>
+        <a href="testimonials.html">Testimonials</a>
+    </div>
+
+    <section class="testimonial-section">
+        <h1 style="color: #333;">What Our Clients Say</h1>
+        <div class="testimonial-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial">
+                <p class="testimonial-text">TechWiz's cutting-edge products are revolutionizing the tech industry. Their team is dedicated to innovation, and I've had an amazing experience using their solutions. Highly recommended!</p>
+                <p class="client-name">Sarah Johnson</p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial">
+                <p class="testimonial-text">I'm truly impressed with TechWiz's services. They've transformed the way our business operates, saving us time and resources. It's a pleasure to work with such a forward-thinking company.</p>
+                <p class="client-name">Mark Anderson</p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial">
+                <p class="testimonial-text">TechWiz's team has been instrumental in our success. They provide innovative solutions that have given us a competitive edge in the market.</p>
+                <p class="client-name">Linda Smith</p>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="testimonial">
+                <p class="testimonial-text">I've been working with TechWiz for years, and their products have consistently exceeded my expectations. Their support is top-notch.</p>
+                <p class="client-name">John Doe</p>
+            </div>
+
+            <!-- Add more testimonials as needed -->
+        </div>
+
+        <!-- Spot to Leave a Review -->
+        <a href="leave_review.html" class="cta-button">Leave a Review</a>
+    </section>
+
+    <body>
+
+<div id="last-updated"></div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        // Get the last modified date and time from the document
+        let lastModified = new Date(document.lastModified);
+    
+        // Format the date as a string: MM/DD/YYYY
+        let formattedDate = (lastModified.getMonth() + 1).toString().padStart(2, '0') + "/"
+                          + lastModified.getDate().toString().padStart(2, '0') + "/"
+                          + lastModified.getFullYear();
+    
+        // Format the time as a string: HH:mm:ss
+        let formattedTime = lastModified.getHours().toString().padStart(2, '0') + ":"
+                          + lastModified.getMinutes().toString().padStart(2, '0') + ":"
+                          + lastModified.getSeconds().toString().padStart(2, '0');
+    
+        // Get the last-updated element
+        let lastUpdatedElement = document.getElementById('last-updated');
+    
+        // Set the text content of the last-updated element to the formatted date and time
+        lastUpdatedElement.textContent = "Last modified: " + formattedDate + " " + formattedTime;
+    });
+</script>
+
+</body>
+</body>
